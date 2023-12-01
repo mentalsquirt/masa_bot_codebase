@@ -6,4 +6,4 @@ EXPOSE 80
 CMD ["python", "main.py"]
 
 # docker build -t masa_bot .
-# docker run -p 4000:80 --name masa -e "TOKEN=**your_token**" -e REDIS_URL="redis://**your-redis-url**" masa_bot
+# docker run -p 4000:80 --name masa -e TOKEN="**your_token**" -e REDIS_URL="redis://**your-redis-url**" masa_bot

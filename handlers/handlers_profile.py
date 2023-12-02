@@ -42,9 +42,7 @@ async def send_registration_check(callback: types.CallbackQuery, state: FSMConte
   if current_state == "RegistrationState:user_registered" and user_data['id'] == user_id:
     await callback.message.answer(f"<b>Ты уверен, что хочешь отправить свои данные для связи организаторам программы {prog_data[user_data['current_prog']][0]}?</b>",
                                   reply_markup=kb.get_confirmation_keyboard())
-    # TODO: make up a text for email messages that differs depending on the programme name that user has applied to
   else:
-    # TODO: initialize the FSM registration process 
     await callback.message.answer(base_texts["baseRegister"](), reply_markup=ReplyKeyboardRemove())
     await state.set_state(RegistrationState.waiting_for_name)
 
@@ -264,7 +262,6 @@ async def profile_callback_handler(callback: types.CallbackQuery,
   await callback.answer()
 
 
-# TODO: send the user data after editing
 """
   edit user's personal data handlers
 """

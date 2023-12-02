@@ -86,6 +86,3 @@ async def data_sender(callback: types.CallbackQuery, callback_data: kb.senderCal
     await callback.message.answer("Окей, посмотри другие программы и точно найдёшь себе что-нибудь по душе! ;)", reply_markup=kb.replyMenu)
     await main_menu_handler(callback.message, state)
   await callback.answer()
-
-  
-  # TODO: now I send user data upon registration (full, such as last prog and page_prog). make it so only the needed data is being sent.

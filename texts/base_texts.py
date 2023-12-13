@@ -64,7 +64,7 @@ aboutContacts = \
 """
 <i>Подпишись на соцсети Масы и стань частью большого комьюнити, говорящего с тобой на одном языке!</i>
 
-Israel phone: +(972)02-621-6581
+Israel phone: +(972) 02-621-6581
 Russia phone: 810-800-2095-1972
 Whatsapp: +(972)52-614-9547
 Instagram: https://www.instagram.com/masa_fsu/ 
